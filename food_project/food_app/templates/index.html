@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="body">
+        <h1>Sign Up</h1>
+        <div class="card" style="display:flex">
+            <div >
+                <img src="{% static 'images/sign_up.jpg' %}" class="img">
+            </div>
+            <div>
+                <span><p>Please sign up to start exploring the platform</p></span>
+                <form method="post">
+                    {% csrf_token %}
+                    <label for="email">Email</label><br><br>
+                    <input type="text" id="email" name="email" placeholder="Enter email address"><br><br>
+                    <label for="password">Password</label><br><br>
+                    <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+                    <label for="confirm_password">Confirm Password</label><br><br>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password"><br><br>
+                    <input type="checkbox" id="check" > I agree to the Privacy Policy<br><br>
+                    <button style="color: white; background-color: darkblue;text-size-adjust: bold;">Sign Up</button>
+                    <span><p>Already a member? Sign in</p></span>
+                </form>
+
+            </div>
+            
+        </div>   
+    </body>
+</html>

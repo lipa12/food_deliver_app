@@ -1,0 +1,23 @@
+{% load static%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="body">
+    <div class="card">
+
+       <h1>Sign In</h1>
+        <span>Please enter your details to sign-in</span><br><br>
+        <label for="email" style="padding-right:30px">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter your mail" ><br><br>
+        <label for="password" >Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <button style="color:white; background-color:blue;text-size-adjust:bold;">Submit</button>
+    </div>
+
+
+</body>
+</html>
